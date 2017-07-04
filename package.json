@@ -1,0 +1,44 @@
+{
+  "name": "php-integrator-base-legacy-php56",
+  "main": "./lib/Main",
+  "version": "0.0.0",
+  "description": "Indexes PHP code and exposes services to query it (required for other php-integrator-* packages).",
+  "repository": "php-integrator/atom-base-legacy-php56",
+  "license": "GPL-3.0",
+  "engines": {
+    "atom": ">=1.13.0 <2.0.0"
+  },
+  "providedServices": {
+    "php-integrator.service": {
+      "versions": {
+        "2.0.0": "getServiceInstance"
+      }
+    }
+  },
+  "consumedServices": {
+    "status-bar": {
+      "versions": {
+        "^1.0.0": "setStatusBarService"
+      }
+    },
+    "project-manager": {
+      "versions": {
+        "^3.1.0": "setProjectManagerService"
+      }
+    }
+  },
+  "dependencies": {
+    "event-kit": "~2.0.0",
+    "jquery": "~3.1.0",
+    "md5": "~2.0.0",
+    "rimraf": "~2.5.4",
+    "download": "~5.0.2"
+  },
+  "keywords": [
+    "php",
+    "service",
+    "integrator",
+    "integration",
+    "php-integrator"
+  ]
+}
