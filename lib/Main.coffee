@@ -55,7 +55,7 @@ module.exports =
      *
      * @var {String}
     ###
-    packageName: 'php-integrator-base'
+    packageName: 'php-integrator-base-legacy-php56'
 
     ###*
      * The configuration object.
